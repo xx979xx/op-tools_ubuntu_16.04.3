@@ -17,4 +17,6 @@ After installation dont forget the activate the virtual environment by doing
 ```bash
 cd openpilot
 pipenv shell # Activate virtual environment
+cd tools
+pip install -r requirements.txt
 ```

@@ -57,16 +57,16 @@ rm -rf c-capnproto/ capnproto-c++-0.6.1 capnproto-c++-0.6.1.tar.gz
 
 # clone and create virtualenv for openpilot
 cd # Clone into home directory root
-git clone https://github.com/commaai/openpilot
-git checkout v0.6.6 # Checkout v0.6.6
+git clone https://github.com/xx979xx/openpilot
+git checkout tools-lkas # Checkout v0.6.6
 pushd openpilot
 OPPATH=$(pwd) # Store directory for PYTHONPATH
 pipenv install # Install dependencies in a virtualenv
 
 # 4. Clone tools within openpilot, and install dependencies
-git clone https://github.com/commaai/openpilot-tools.git tools
+git clone https://github.com/xx979xx/openpilot-tools.git tools
 pushd tools
-git checkout v0.6.6  # the tag must match the openpilot version you are using (see https://github.com/commaai/openpilot-tools/tags) TODO: make user supplied variable
+git checkout tools  # the tag must match the openpilot version you are using (see https://github.com/commaai/openpilot-tools/tags) TODO: make user supplied variable
 popd
 popd
 

@@ -25,9 +25,6 @@ sudo apt install python-qt4
 # Install dependencies for matplotlib (needed to make pip install work in later step)
 sudo apt install libpng-dev libfreetype6-dev
 
-# Install scons to build v0.7 messaging
-sudo apt-get install scons
-
 # zeromq
 curl -LO https://github.com/zeromq/libzmq/releases/download/v4.2.3/zeromq-4.2.3.tar.gz
 tar xfz zeromq-4.2.3.tar.gz
